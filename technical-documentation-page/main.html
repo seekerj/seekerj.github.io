@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Technical Documentation Page</title>
+  <link rel="stylesheet" type="text/css" href="CSS/style.css">
+</head>
+<body>
+  <nav id="navbar">
+    <header>HTML5 Documentation</header>
+    <ul>
+      <a class="nav-link" href="#introduction">
+        <li>Introduction</li>
+      </a>
+      <a class="nav-link" href="#new-features">
+        <li>New Features</li>
+      </a>
+      <a class="nav-link" href="#syntax">
+        <li>HTML5-Syntax</li>
+      </a>
+      <a class="nav-link" href="#event">
+        <li>HTML5-Events</li>
+      </a>
+      <a class="nav-link" href="#element">
+        <li>HTML5-Elements</li>
+      </a>
+      <a class="nav-link" href="#attribute">
+        <li>HTML5-Attributes</li>
+      </a>
+      <a class="nav-link" href="#document">
+        <li>HTML5-Document</li>
+      </a>
+      <a class="nav-link" href="#web-form">
+        <li>Web Forms 2.0</li>
+      </a>
+      <a class="nav-link" href="#web-storage">
+        <li>HTML5-Web Storage</li>
+      </a>
+      <a class="nav-link" href="#audio-video">
+        <li>Audio & Video</li>
+      </a>
+      <a class="nav-link" href="#microdata">
+        <li>HTML5-Microdata</li>
+      </a>
+      <a class="nav-link" href="#websockets">
+        <li>HTML5-WebSockets</li>
+      </a>
+      <a class="nav-link" href="#mathml">
+        <li>HTML5-MathML</li>
+      </a>
+      <a class="nav-link" href="#canvas">
+        <li>HTML5-Canvas</li>
+      </a>
+      <a class="nav-link" href="#drag-drop">
+        <li>HTML5-Drag & drop</li>
+      </a>
+      <a class="nav-link" href="#reference">
+        <li>Reference</li>
+      </a>
+    </ul>
+  </nav>
+  <main id="main-doc">
+    <section class="main-section" id="introduction">
+      <header>Introduction</header>
+      <article>
+        <p>HTML5 is the next major revision of the HTML standard superseding HTML 4.01, XHTML 1.0,
+and XHTML 1.1. HTML5 is a standard for structuring and presenting content on the World
+Wide Web.HTML is not a programming language, but rather a markup language.</p>
+
+<p>The latest versions of Apple Safari, Google Chrome, Mozilla Firefox, and Opera all support
+many HTML5 features and Internet Explorer 9.0 will also have support for some HTML5
+functionality.The mobile web browsers that come pre-installed on iPhones, iPads, and Android phones all
+have excellent support for HTML5.</p>
+      </article>
+    </section>
+    <section class="main-section" id="new-features">
+      <header>New Features</header>
+      <article>
+        <p>HTML5 introduces a number of new elements and attributes that can help you in building modern websites.
+           Here is a set of some of the most prominent features introduced in HTML5.</p>
+           <ul>
+             <li>
+               <p><b>New Semantic Elements</b> − These are like < header >, < footer > and < section >.
+               </p>
+             </li>
+             <li>
+               <p><b>Forms 2.0</b> − Improvements to HTML web forms where new attributes have been introduced for < input > tag.
+               </p>
+             </li>
+             <li>
+               <p><b>Persistent Local Storage</b> − To achieve without resorting to third-party plugins.
+               </p>
+             </li>
+             <li>
+               <p><b>WebSocket</b> − A next-generation bidirectional communication technology for web applications.
+               </p>
+             </li>
+             <li>
+               <p><b>Server-Sent Events</b> −  HTML5 introduces events which flow from web server to the web browsers and they are called Server-Sent Events (SSE).
+               </p>
+             </li>
+             <li>
+               <p><b>WebSocket</b> − A next-generation bidirectional communication technology for web applications.
+               </p>
+             </li>
+             <li>
+               <p><b>Audio & Video</b> − You can embed audio or video on your webpages without resorting to third-party plugins.
+               </p>
+             </li>
+             <li>
+               <p><b>Canvas</b> − This supports a two-dimensional drawing surface that you can program with JavaScript.
+               </p>
+             </li>
+             <li>
+               <p><b>Microdata</b> − This lets you create your own vocabularies beyond HTML5 and extend your web pages with custom semantics.
+               </p>
+             </li>
+             <li>
+               <p><b>Drag and drop</b> −  Drag and drop the items from one location to another location on the same webpage.
+               </p>
+             </li>
+           </ul>
+      </article>
+    </section>
+    <section class="main-section" id="syntax">
+      <header>HTML5 Syntax</header>
+      <article>
+        <p>The HTML 5 language has a "custom" HTML syntax that is compatible with HTML 4 and XHTML1 documents published on the Web,
+          but is not compatible with the more esoteric SGML features of HTML 4.</p>
+          <p>HTML5 comes with a lot of flexibility and it supports the following features − </p>
+          <ul>
+            <li>Uppercase tag names.</li>
+            <li>Quotes are optional for attributes.</li>
+            <li>Attribute values are optional.</li>
+            <li>Closing empty elements are optional.</li>
+          </ul>
+          <h2>The DOCTYPE</h2>
+          <p>DOCTYPEs in older versions of HTML were longer because the HTML language was SGML
+            based and therefore required a reference to a DTD.</p>
+            <p>HTML 5 authors would use simple syntax to specify DOCTYPE as follows − </p>
+            <code>< !DOCTYPE html ></code>
+            <p>The above syntax is case-insensitive.</p>
+            <h2>Character Encoding</h2>
+            <p>HTML 5 authors can use simple syntax to specify Character Encoding as follows − </p>
+            <code>< meta charset = "UTF-8" ></code>
+            The above syntax is case-insensitive.
+            <h2>The < script > tag</h2>
+            It's common practice to add a type attribute with a value of "text/javascript" to script elements as follows −
+            <code>< script type = "text/javascript" src = "scriptfile.js">< /script > </code>
+            HTML 5 removes extra information required and you can use simply following syntax −
+            <code>< script src = "scriptfile.js">< /script ></code>
+            <h2>The < link > tag</h2>
+            So far you were writing <link> as follows −
+            <code>< link rel = "stylesheet" type = "text/css" href = "stylefile.css" ></code>
+            HTML 5 removes extra information required and you can simply use the following syntax −
+            <code>< link rel = "stylesheet" href = "stylefile.css" ></code>
+      </article>
+    </section>
+
+    <section class="main-section" id="event">
+      <header>HTML5 Events</header>
+      <article>
+        <p>When users visit your website, they perform various activities such as clicking on
+           text and images and links, hover over defined elements, etc. These are examples of what JavaScript calls events.</p>
+        <p>We can write our event handlers in Javascript or VBscript and you can specify these event handlers as a value of event tag attribute. </p>
+           We can use the following set of attributes to trigger any javascript or vbscript code given as value, when there is any event that takes place for any HTML5 element.
+        <h2>Attribute & Description</h2>
+        <ul>
+          <li>
+            <p><b>offline</b> − Triggers when the document goes offline.
+            </p>
+          </li>
+          <li>
+            <p><b>onblur</b> − Triggers when the window loses focus.
+            </p>
+          </li>
+          <li>
+            <p><b>oncanplay</b> − Triggers when an element changes.
+            </p>
+          </li>
+          <li>
+            <p><b>onclick</b> − Triggers on a mouse click.
+            </p>
+          </li>
+          <li>
+            <p><b>oncontextmenu</b> − Triggers when a context menu is triggered.
+            </p>
+          </li>
+          <li>
+            <p><b>ondrop</b> − Triggers when dragged element is being dropped.
+            </p>
+          </li>
+          <li>
+            <p><b>onfocus</b> − Triggers when the window gets focus
+            </p>
+          </li>
+          <li>
+            <p><b>oninput</b> − Triggers when an element gets user input
+            </p>
+          </li>
+          <li>
+            <p><b>onload</b> − Triggers when the document loads
+            </p>
+          </li>
+          <li>
+            <p><b>onmousedown</b> − Triggers when a mouse button is pressed
+            </p>
+          </li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="main-section" id="element">
+      <header>HTML5 Elements</header>
+      <article>
+        <p>HTML5 elements are marked up using start tags and end tags.
+           Tags are delimited using angle brackets with the tag name in between.</p>
+          <p>The difference between start tags and end tags is that the latter includes a slash before the tag name.   </p>
+          Following is the example of an HTML5 element −
+            <code>< p >...< /p ></code>
+            HTML5 tag names are case insensitive and may be written in all uppercase or mixed case,
+             although the most common convention is to stick with lowercase.
+            <p>Most of the elements contain some content like < p >...< /p > contains a paragraph. Some elements, however, are forbidden from
+             containing any content at all and these are known as void elements. For example, br, hr, link, meta, etc. </p>
+      </article>
+    </section>
+    <section class="main-section" id="attribute">
+      <header>HTML5 Attributes</header>
+      <article>
+        <p>Elements may contain attributes that are used to set various properties of an element.</p>
+          <p>Some attributes are defined globally and can be used on any element, while others are defined for specific elements only.
+             All attributes have a name and a value and look like as shown below in the example.  </p>
+          Following is the example of an HTML5 attribute which illustrates how to mark up a div element with an attribute named class using a value of "example" −
+            <code>< div class = "example" >...< /div ></code>
+            Attributes may only be specified within start tags and must never be used in end tags.
+            <p>HTML5 attributes are case insensitive and may be written in all uppercase or mixed case,
+               although the most common convention is to stick with lowercase. </p>
+               A new feature being introduced in HTML 5 is the addition of custom data attributes.
+               A custom data attribute starts with data- and would be named based on your requirement. Here is a simple example −
+               <code>< div class = "example" data-subject = "physics" data-level = "complex" >
+         ...
+        < /div ></code>
+        </article>
+    </section>
+    <section class="main-section" id="document">
+      <header>HTML5 Document</header>
+      <article>
+        <p>The following tags have been introduced for better structure −</p>
+        <ul>
+          <li>
+            <p><b>section</b> − This tag represents a generic document or application section. It can be used together with h1-h6 to indicate the document structure.
+            </p>
+          </li>
+          <li>
+            <p><b>article</b> − This tag represents an independent piece of content of a document, such as a blog entry or newspaper article.
+            </p>
+          </li>
+          <li>
+            <p><b>aside</b> − This tag represents a piece of content that is only slightly related to the rest of the page.
+            </p>
+          </li>
+          <li>
+            <p><b>header</b> − This tag represents the header of a section.
+            </p>
+          </li>
+          <li>
+            <p><b>footer</b> −  This tag represents a footer for a section and can contain information about the author, copyright information, et cetera.
+            </p>
+          </li>
+          <li>
+            <p><b>nav</b> − This tag represents a section of the document intended for navigation.
+            </p>
+          </li>
+          <li>
+            <p><b>dialog</b> − This tag can be used to mark up a conversation.
+            </p>
+          </li>
+          <li>
+            <p><b>figure</b> −  This tag can be used to associate a caption together with some embedded content, such as a graphic or video.
+            </p>
+          </li>
+        </ul>
+          The markup for an HTML 5 document would look like the following −
+          <code>< !DOCTYPE html >
+
+< html >
+   < head >
+      < meta charset = "utf-8" >
+      < title>...< /title >
+   < /head >
+
+   < body >
+      < header >...< /header >
+      < nav >...< /nav >
+
+      < article >
+         < section >
+            ...
+         < /section >
+      < /article >
+      < aside >...< /aside >
+
+      < footer >...< /footer >
+   < /body >
+< /html > </code>
+</article>
+</section>
+    <section class="main-section" id="web-form">
+      <header>HTML5 Web Forms 2.0</header>
+      <article>
+        <p>Web Forms 2.0 is an extension to the forms features found in HTML4. Form elements and attributes in HTML5 provide a greater degree of semantic mark-up than HTML4 and
+           free us from a great deal of tedious scripting and styling that was required in HTML4.</p>
+          <h2>The < input > element in HTML4</h2>
+          <h3>Type & Description</h3>
+          <ul>
+            <li>
+              <p><b>text</b> − A free-form text field, nominally free of line breaks.
+              </p>
+            </li>
+            <li>
+              <p><b>password</b> − A free-form text field for sensitive information, nominally free of line breaks.
+              </p>
+            </li>
+            <li>
+              <p><b>checkbox</b> − A set of zero or more values from a predefined list.
+              </p>
+            </li>
+            <li>
+              <p><b>radio</b> − An enumerated value.
+              </p>
+            </li>
+            <li>
+              <p><b>submit</b> − A free form of button initiates form submission.
+              </p>
+            </li>
+            <li>
+              <p><b>file</b> − An arbitrary file with a MIME type and optionally a file name.
+              </p>
+            </li>
+            <li>
+              <p><b>image</b> − A coordinate, relative to a particular image's size, with the extra semantic that it must be the last value selected and initiates form submission.
+              </p>
+            </li>
+            <li>
+              <p><b>hidden</b> − An arbitrary string that is not normally displayed to the user.
+              </p>
+            </li>
+            <li>
+              <p><b>select</b> − An enumerated value, much like the radio type.
+              </p>
+            </li>
+            <li>
+              <p><b>textarea</b> − A free-form text field, nominally with no line break restrictions.
+              </p>
+            </li>
+            <li>
+              <p><b>button</b> − A free form of button which can initiates any event related to button.
+              </p>
+            </li>
+            <code>...
+< form action = "http://example.com/cgiscript.pl" method = "post" >
+   < p >
+      < label for = "firstname">first name: < /label >
+      < input type = "text" id = "firstname" >< br / >
+
+      < label for = "lastname">last name: < /label>
+      < input type = "text" id = "lastname" >< br />
+
+      < label for = "email">email: < /label >
+      < input type = "text" id = "email" >< br >
+
+      < input type = "radio" name = "sex" value = "male" > Male< br >
+      < input type = "radio" name = "sex" value = "female" > Female< br >
+      < input type = "submit" value = "send"> < input type = "reset" >
+   < /p >
+< /form >
+ ... </code>
+        </article>
+    </section>
+
+    <section class="main-section" id="web-storage">
+      <header>HTML5 Web Storage</header>
+      <article>
+        <p>HTML5 introduces two mechanisms, similar to HTTP session cookies, for storing structured data on the client side and to overcome following drawbacks.</p>
+          <ul>
+            <li>Cookies are included with every HTTP request, thereby slowing down your web application by transmitting the same data.</li>
+            <li>Cookies are included with every HTTP request, thereby sending data unencrypted over the internet.</li>
+            <li>Cookies are limited to about 4 KB of data. Not enough to store required data.</li>
+          </ul>
+          The two storages are session storage and local storage and they would be used to handle different situations.
+          <p>The latest versions of pretty much every browser supports HTML5 Storage including Internet Explorer.</p>
+          <h2>Session Storage</h2>
+          <p>The Session Storage is designed for scenarios where the user is carrying out a single transaction,
+             but could be carrying out multiple transactions in different windows at the same time.</p>
+             <p>HTML5 introduces the sessionStorage attribute which would be used by the sites to add data to the session storage, and it will be accessible to any page from the same site opened in that window, i.e.,
+               session and as soon as you close the window, the session would be lost.</p>
+               Following is the code which would set a session variable and access that variable −
+               <code>< !DOCTYPE html >
+
+< html >
+   < body >
+      < script type = "text/javascript" >
+
+         if( sessionStorage.hits ) {
+            sessionStorage.hits = Number(sessionStorage.hits) +1;
+         } else {
+            sessionStorage.hits = 1;
+         }
+         document.write("Total Hits :" + sessionStorage.hits );
+      < /script >
+
+      < p >Refresh the page to increase number of hits.< /p >
+      < p >Close the window and open it again and check the result.< /p >
+
+   < /body >
+< /html ></code>
+            <h2>Local Storage</h2>
+            <p>The Local Storage is designed for storage that spans multiple windows, and lasts beyond the current session. In particular, Web applications may wish to store megabytes of user data,
+              such as entire user-authored documents or a user's mailbox, on the client side for performance reasons.</p>
+              Again, cookies do not handle this case well, because they are transmitted with every request.
+              <code>< !DOCTYPE html>
+
+< html >
+   < body >
+      < script type = "text/javascript">
+
+         if( localStorage.hits ) {
+            localStorage.hits = Number(localStorage.hits) +1;
+         } else {
+            localStorage.hits = 1;
+         }
+         document.write("Total Hits :" + localStorage.hits );
+      < /script >
+
+      < p >Refresh the page to increase number of hits.< /p >
+      < p >Close the window and open it again and check the result.< /p >
+
+   < /body >
+< /html ></code>
+            <h2>Delete Web Storage</h2>
+            <p>Storing sensitive data on local machine could be dangerous and could leave a security hole.</p>
+            The Session Storage Data would be deleted by the browsers immediately after the session gets terminated.
+            <p>To clear a local storage setting you would need to call localStorage.remove('key'); where 'key' is the key of the value you want to remove.
+              If you want to clear all settings, you need to call localStorage.clear() method.</p>
+              Following is the code which would clear complete local storage −
+              <code>< !DOCTYPE html>
+
+< html >
+   < body >
+
+      < script type = "text/javascript">
+         localStorage.clear();
+
+         // Reset number of hits.
+         if( localStorage.hits ) {
+            localStorage.hits = Number(localStorage.hits) +1;
+         } else {
+            localStorage.hits = 1;
+         }
+         document.write("Total Hits :" + localStorage.hits );
+
+      < /script >
+
+      < p >Refreshing the page would not to increase hit counter.< /p >
+      < p >Close the window and open it again and check the result.< /p >
+
+   < /body >
+< /html ></code>
+        </article>
+    </section>
+
+    <section class="main-section" id="audio-video">
+      <header>HTML5 Audio & Video</header>
+      <article>
+        <p>HTML5 features include native audio and video support without the need for Flash.</p>
+        <p>The HTML5 < audio > and < video > tags make it simple to add media to a website. You need to set
+             src attribute to identify the media source and include a controls attribute so the user can play and pause the media.  </p>
+        <h2>Embedding Video</h2>
+        Here is the simplest form of embedding a video file in your webpage −
+        <code>< video src = "foo.mp4"  width = "300" height = "200" controls>
+        Your browser does not support the < video > element.
+  < /video ></code>
+        <h2>Embedding Audio</h2>
+        HTML5 supports < audio > tag which is used to embed sound content in an HTML or XHTML document as follows.
+        <code>< audio src = "foo.wav" controls autoplay>
+   Your browser does not support the < audio > element.
+< /audio ></code>
+         The current HTML5 draft specification does not specify which audio formats browsers should support in the audio tag.
+         But most commonly used audio formats are ogg, mp3 and wav.
+
+      </article>
+    </section>
+
+    <section class="main-section" id="microdata">
+      <header>HTML5 Microdata</header>
+      <article>
+        <p>Microdata is a standardized way to provide additional semantics in your web pages.</p>
+        <p>Microdata lets you define your own customized elements and start embedding custom properties in your web pages.
+           At a high level, microdata consists of a group of name-value pairs.  </p>
+           The groups are called items, and each name-value pair is a property. Items and properties are represented by regular elements.
+        <h2>Example</h2>
+        <ul>
+        <li>To create an item, the itemscope attribute is used.</li>
+        <li>To add a property to an item, the itemprop attribute is used on one of the item's descendants.</li>
+        </ul>
+        Here there are two items, each of which has the property "name" −
+        <code>< html >
+   < body >
+
+      < div itemscope>
+         < p >My name is < span itemprop = "name">Zara< /span >.< /p >
+      < /div >
+
+      < div itemscope>
+        < p >My name is < span itemprop = "name">Nuha< /span >.< /p >
+      < /div >
+
+   < /body >
+< /html ></code>
+     </article>
+    </section>
+
+    <section class="main-section" id="websockets">
+      <header>HTML5 WebSockets</header>
+      <article>
+        <p>WebSockets is a next-generation bidirectional communication technology for web applications
+           which operates over a single socket and is exposed via a JavaScript interface in HTML 5 compliant browsers.</p>
+        <p>Once you get a Web Socket connection with the web server, you can send data from browser to server by calling a send() method,
+          and receive data from server to browser by an onmessage event handler.  </p>
+           Following is the API which creates a new WebSocket object.
+        <code>var Socket = new WebSocket(url, [protocal] );</code>
+        Here first argument, url, specifies the URL to which to connect. The second attribute, protocol is optional,
+         and if present, specifies a sub-protocol that the server must support for the connection to be successful.
+      </article>
+    </section>
+
+    <section class="main-section" id="mathml">
+      <header>HTML5 MathML</header>
+      <article>
+        <p>The HTML syntax of HTML5 allows for MathML elements to be used inside a document using < math >...< /math > tags.</p>
+        <p>Most of the web browsers can display MathML tags. If your browser does not support MathML, then I would suggest you to use latest version of Firefox.  </p>
+        <h2>MathML Examples</h2>
+        Following is a valid HTML5 document with MathML −
+        <code>< !doctype html>
+
+< html >
+   < head >
+      < meta charset = "UTF-8">
+      < title>Pythagorean theorem< /title >
+   < /head >
+
+   < body >
+      < math xmlns = "http://www.w3.org/1998/Math/MathML">
+
+         < mrow >
+            < msup >< mi >a< /mi >< mn >2< /mn >< /msup >
+            < mo >+< /mo >
+
+            < msup >< mi >b< /mi >< mn >2< /mn >< /msup >
+            < mo > = < /mo >
+
+            < msup >< mi >c< /mi >< mn >2< /mn >< /msup >
+         < /mrow >
+
+      < /math >
+   < /body >
+< /html > </code>
+        This will produce the following result −
+        <h4>a2 + b2 = c2</h4>
+        </article>
+    </section>
+
+    <section class="main-section" id="canvas">
+      <header>HTML5 Canvas</header>
+      <article>
+        <p>HTML5 element < canvas > gives you an easy and powerful way to draw graphics using JavaScript.
+           It can be used to draw graphs, make photo compositions or do simple (and not so simple) animations.</p>
+        <p>Here is a simple < canvas > element which has only two specific attributes width and height plus all the core HTML5 attributes like id, name and class, etc.  </p>
+        <code>< canvas id = "mycanvas" width = "100" height = "100">< /canvas ></code>
+        You can easily find that < canvas > element in the DOM using getElementById() method as follows −
+        <code>var canvas = document.getElementById("mycanvas");</code>
+        Let us see a simple example on using < canvas > element in HTML5 document.
+          <code>< !DOCTYPE HTML >
+< html >
+   < head >
+      < style >
+         #mycanvas{border:1px solid red;}
+      < /style >
+   < /head >
+   < body >
+      < canvas id = "mycanvas" width = "100" height = "100">< /canvas >
+   < /body >
+< /html ></code>
+      </article>
+    </section>
+
+    <section class="main-section" id="drag-drop">
+      <header>HTML5 Drag & drop</header>
+      <article>
+        <p>Drag and Drop (DnD) is powerful User Interface concept which makes it easy to copy, reorder and deletion of items with the help of mouse clicks.
+          This allows the user to click and hold the mouse button down over an element, drag it to another location, and release the mouse button to drop the element there.</p>
+        <p>To achieve drag and drop functionality with traditional HTML4, developers would either have to either have
+          to use complex JavaScript programming or other JavaScript frameworks like jQuery etc.  </p>
+          HTML 5 DnD is supported by all the major browsers like Chrome, Firefox 3.5 and Safari 4 etc.
+          <h2>Events & Description</h2>
+          <ul>
+            <li>
+              <p><b>dragstart</b> − Fires when the user starts dragging of the object.
+              </p>
+            </li>
+            <li>
+              <p><b>dragenter</b> − Fired when the mouse is first moved over the target element while a drag is occurring. A listener for this event should indicate whether a drop is allowed over this location.
+                 If there are no listeners, or the listeners perform no operations, then a drop is not allowed by default.
+              </p>
+            </li>
+            <li>
+              <p><b>dragover</b> − This event is fired as the mouse is moved over an element when a drag is occurring. Much of the time,
+                 the operation that occurs during a listener will be the same as the dragenter event.
+              </p>
+            </li>
+            <li>
+              <p><b>dragleave</b> − This event is fired when the mouse leaves an element while a drag is occurring.
+                Listeners should remove any highlighting or insertion markers used for drop feedback.
+              </p>
+            </li>
+            <li>
+              <p><b>drag</b> −  Fires every time the mouse is moved while the object is being dragged.
+              </p>
+            </li>
+            <li>
+              <p><b>drop</b> − The drop event is fired on the element where the drop was occurred at the end of the drag operation.
+                 A listener would be responsible for retrieving the data being dragged and inserting it at the drop location.
+              </p>
+            </li>
+            <li>
+              <p><b>dragend</b> − Fires when the user releases the mouse button while dragging an object.
+              </p>
+            </li>
+          </ul>
+      </article>
+    </section>
+
+    <section class="main-section" id="reference">
+      <header>Reference</header>
+      <article>
+        <ul>
+          <li>All the documentation in this page is taken from<a href="https://www.tutorialspoint.com/html5/html5_drag_drop.htm" target="_blank">Tutorials point</a></li>
+        </ul>
+      </article>
+    </section>
+
+
+
+
+  </main>
+</body>
+</html>

@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: sans-serif, serif;
+  text-align: center;
+}
+nav ul {
+  text-align: right;
+  width: 100%;
+  position: fixed;
+  background-color: #e0ebe8;
+}
+nav ul li {
+  display: inline-block;
+  margin: 55px;
+  margin-top: 25px;
+  margin-bottom: 15px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #008080;
+}
+nav ul li a:hover {
+  color: green;
+}
+.intro {
+  top: 0;
+  background: #e0ebe8;
+  min-height: 55vh;
+  padding-top: 45vh;
+}
+h1 {
+  display: block;
+  font-size: 2em;
+}
+.intro p {
+  color: green;
+  margin-top: 5px;
+}
+.work {
+  padding-top: 60px;
+  margin-top: -60px;
+}
+.work h2 {
+  margin-top: 50px;
+  color: #008080;
+  font-weight: normal;
+}
+.project {
+  display: inline-block;
+  text-decoration: none;
+  color: #008080;
+  overflow: hidden;
+  border: 2px solid lightblue;
+  height: 220px;
+  width: 280px;
+  margin: 40px 100px;
+}
+.project-pic {
+  width: 100%;
+  height: 180px;
+  border-bottom: 2px solid lightblue;
+}
+.project-title {
+  font-weight: bold;
+  padding: 5px;
+}
+@media only screen and (max-width: 500px)  {
+  nav ul {
+    text-align: center;
+  }
+  nav ul li {
+    margin: 20px;
+  }
+.project {
+  margin: 40px 0;
+}
+}
+.contact {
+  background: #C8F7C5;
+  padding-bottom: 160px;
+}
+.header {
+  padding: 160px 0 110px;
+}
+.header p {
+  padding-top: 5px;
+}
+.contact-details {
+  display: inline-block;
+  font-weight: bold;
+  margin: 0 35px 45px 35px;
+  border: 2px solid #90C695;
+  border-radius: 100%;
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  text-decoration: none;
+  background-color: #e0ebe8;
+  color: #008080;
+}
+.contact-details:hover {
+  background: #E4F1FE;
+  color: green;
+}
+footer {
+  padding: 20px;
+  background: #22313F;
+  color: white;
+  line-height: 40px;
+}
+@media only screen and (max-width: 367px) {
+ .contact-details {
+   border: 2px solid #90C695;
+   border-radius: 0;
+   width: 90px;
+   height: 20px;
+   padding: 10px;
+   line-height: normal;
+ }
+}
